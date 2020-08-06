@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./style.css" />
+        <script
+            type="text/javascript"
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBIPT1o5WItRO-4H2c67Moti9oeb9jLL_s&libraries=geometry"
+        ></script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIPT1o5WItRO-4H2c67Moti9oeb9jLL_s&callback=initMap&libraries=&v=weekly"></script> -->
+        <script src="main.js"></script>
+
+        <title>Rafale Trip</title>
+    </head>
+    <body>
+        <h1>Rafale</h1>
+        <div class="controls">
+            <select id="s_from" hidden>
+                <option value="paris">London</option>
+            </select>
+            <select id="s_to" hidden>
+                <option value="ambala">Athens</option>
+            </select>
+            <button type="submit" onclick="go();">
+                Launch Rafale
+            </button>
+        </div>
+        <div id="mapCanvas" class="map"></div>
+        <script type="text/javascript">
+            loadMap();
+        </script>
+    </body>
+</html>
